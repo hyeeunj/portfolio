@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*한글폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;700&display=swap');
+
+/*영문폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
