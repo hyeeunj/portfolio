@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOME &amp; TONES</title>
+	
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/home_mobile.css">
+	
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
+	<script src="js/home_mobile.js"></script>
+	
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<div class="contain">
+				<div class="main-header">
+					<h1 class="logo"><a href="#"><img src="icon/logo.png" alt="홈앤톤즈 로고"></a></h1>
+					<a href="#" class="menu"><i class="xi-bars"></i></a>
+					<a href="#" class="search"><i class="xi-search"></i></a>
+					
+				</div>
+				<div class="search-box">
+					<a href="#" class="s-close"><i class="xi-close"></i></a>
+					<div class="s-list">
+						<p><a href=".search-color" class="on">컬러로</a></p>
+						<p><a href=".search-prod">상품으로</a></p>
+					</div>
+					<div class="tab-search search-color">
+						<div class="form-box clear">
+							<form>
+								<input type="text" placeholder="컬러명 또는 컬러넘버로 검색하세요.">
+							</form>
+							<a href="javascript:;"><i class="xi-search"></i></a>
+						</div>
+						<p class="search-re">
+							<span>추천검색어</span>
+							<span>
+								<a href="javascript:;">퓨어 그레이</a>
+								<a href="javascript:;">문 댄스</a>
+								<a href="javascript:;">로즈롤</a>
+								<a href="javascript:;">밀크 화이트</a>
+							</span>
+						</p>
+					</div>
+					<div class="tab-search search-prod">
+						<div class="form-box clear">
+							<form>
+								<input type="text" placeholder="상품명으로 검색하세요.">
+							</form>
+							<a href="javascript:;"><i class="xi-search"></i></a>
+						</div>
+						<p class="search-re">
+							<span>추천검색어</span>
+							<span>
+								<a href="javascript:;">더 클래시</a>
+								<a href="javascript:;">젯소</a>
+								<a href="javascript:;">벽지</a>
+								<a href="javascript:;">셀프</a>
+								<a href="javascript:;">자석 페인트</a>
+							</span>
+						</p>
+					</div>
+				</div>
+				<nav>
+					<div class="gnb">
+						<div class="util-top">
+							<dl class="top-area">
+								<dt class="login"><a href="#"><span>로그인 해주세요</span><span>GO</span></a></dt>
+								<dd><a href="#"><img src="icon/clock.png" alt=""><span>최근본상품</span></a></dd>
+								<dd><a href="#"><img src="icon/shopping-bag.png" alt=""><span>장바구니</span></a></dd>
+								<dd><a href="#"><img src="icon/calculator.png" alt=""><span>계산기</span></a></dd>
+								<dd><a href="#"><img src="icon/shop.png" alt=""><span>매장찾기</span></a></dd>
+							</dl>
+						</div>
+						<div class="gnb-menu">
+							<ul class="depth1">
+								<li>
+									<a href="#">COLOR<i class="xi-plus-thin"></i></a>
+									<ul class="depth2">
+										<li><a href="#">컬러 추천</a></li>
+										<li>
+											<a href="#">컬러 검색</a>
+											<ul class="depth3">
+												<li><a href="#">컬러차트</a></li>
+												<li><a href="#">펫 러브 컬러차트</a></li>
+												<li><a href="#">NCS 컬러</a></li>
+											</ul>
+										</li>
+										<li><a href="#">컬러 리뷰</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">PAINT<i class="xi-plus-thin"></i></a>
+									<ul class="depth2">
+										<li>
+											<a href="#">용도별 페인트</a>
+											<ul class="depth3">
+												<li><a href="#">벽지 / 벽면용</a></li>
+												<li><a href="#">방문 / 가구용</a></li>
+												<li><a href="#">원목가구용</a></li>
+												<li><a href="#">주방 / 욕실 타일용</a></li>
+												<li><a href="#">데코 기능성페인트</a></li>
+												<li><a href="#">프라이머 바니쉬</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">페인트 도구</a>
+											<ul class="depth3">
+												<li><a href="#">브러쉬 / 롤러</a></li>
+												<li><a href="#">기능성 도구</a></li>
+												<li><a href="#">부자재</a></li>
+												<li><a href="#">도구 세트</a></li>
+												<li><a href="#">컬러북</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">페인트 세트</a>
+											<ul class="depth3">
+												<li><a href="#">벽지</a></li>
+												<li><a href="#">가구 / 몰딩</a></li>
+												<li><a href="#">방문 / 욕실문</a></li>
+												<li><a href="#">현관문</a></li>
+												<li><a href="#">베란다 (테라스)</a></li>
+												<li><a href="#">주방 / 욕실 타일</a></li>
+												<li><a href="#">자석 / 칠판 기능성</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">리퍼브</a>
+											<ul class="depth3">
+												<li><a href="#">더클래시 리퍼브</a></li>
+												<li><a href="#">홈스타파스텔 리퍼브</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">PET INTERIORS<i class="xi-plus-thin"></i></a>
+									<ul class="depth2">
+										<li>
+											<a href="#">페인트</a>
+											<ul class="depth3">
+												<li><a href="#">페인트 세트</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">EVENT<i class="xi-plus-thin"></i></a>
+									<ul class="depth2">
+										<li>
+											<a href="#">프로모션</a>
+											<ul class="depth3">
+												<li><a href="#">이벤트</a></li>
+												<li><a href="#">당첨자 발표</a></li>
+											</ul>
+										</li>
+										<li><a href="#">먼슬리 컬러</a></li>
+										<li><a href="#">이 달의 혜택</a></li>
+										<li>
+											<a href="#">매거진</a>
+											<ul class="depth3">
+												<li><a href="#">페인트 노하우</a></li>
+												<li><a href="#">컬러 스토리</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="util-bot">
+							<div class="bot-area">
+								<p>고객센터</p>
+								<a href="#"><img src="icon/phone.png" alt="">1661-9113</a>
+								<p>쇼핑몰 고객센터 운영시간</p>
+								<p>월-금 : 10:00 ~ 17:00 (점심시간 12:00 ~ 13:00)</p>
+							</div>
+						</div>
+						<a href="#" class="close"><i class="xi-close"></i></a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<section id="main-visual">
+				<div class="swiper main-slide">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slide1">
+							<div class="main-text">
+								<a href="#">
+									<span class="m-tit b-eng">SELF-REPAIR GUIDE</span>
+									<span>셀프보수 입문 가이드</span>
+									<p class="m-text">곰팡이 핀 베란다<br>페린이도 칠한다</p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide slide2">
+							<div class="main-text">
+								<a href="#">
+									<span class="m-tit b-eng">COLOR KNOWHOW</span>
+									<span>좁은 공간 한 뼘 더 넓게 보이는</span>
+									<p class="m-text">작은 집 인테리어<br>컬러 노하우</p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide slide3">
+							<div class="main-text">
+								<a href="#">
+									<span class="m-tit b-eng">PET LOVE COLOR PET TERIOR</span>
+									<span>반려견과 반려묘가 머물기 좋은 최고의 공간</span>
+									<p class="m-text">펫 러브 컬러로<br>시작하는 펫테리어</p>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide slide4">
+							<div class="main-text">
+								<a href="#">
+									<span class="m-tit b-eng">ANTI-VIRUS PAINT</span>
+									<span>학원, 병원, 사무실의 기준은 안심</span>
+									<p class="m-text white">바이러스 99.9% 사멸<br>안심닥터 페인트 시공</p>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<!--//main-visual-->
+			
+			<section id="monthly">
+				<div class="inner">
+					<div class="mon-text">
+						<h2>청량한 하늘과 푸른 바닷속을<br>연상시키는 7월의 컬러</h2>
+						<p>
+							<span>#시원한 생동감</span><span> #개방적 활기찬 느낌</span><span> #희망적인</span>
+						</p>
+					</div>
+					<div class="mon-main">
+						<a href="#">
+							<figure><img src="img/main01_01_img13.jpg" alt=""></figure>
+						</a>
+					</div>
+					<div class="swiper mon-slide">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="slide-cont">
+									<figure><img src="img/main01_01_img12.jpg" alt=""></figure>
+									<span class="eng">06</span>
+									<p>
+										<span class="tit eng">JUNE</span>
+										<span class="tag eng">#Peanut</span>
+									</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slide-cont">
+									<figure><img src="img/main01_01_img11.jpg" alt=""></figure>
+									<span class="eng">05</span>
+									<p>
+										<span class="tit eng">MAY</span>
+										<span class="tag eng">#Light Mint</span>
+									</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slide-cont">
+									<figure><img src="img/main01_01_img10.jpg" alt=""></figure>
+									<span class="eng">04</span>
+									<p>
+										<span class="tit eng">APRIL</span>
+										<span class="tag eng">#Rose Fantasy</span>
+									</p>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="slide-cont">
+									<figure><img src="img/main01_01_img09.jpg" alt=""></figure>
+									<span class="eng">03</span>
+									<p>
+										<span class="tit eng">MARCH</span>
+										<span class="tag eng">#Tangerine</span>
+									</p>
+								</a>
+							</div>
+							<a href="#"><i class="xi-plus-thin"></i></a>
+					    </div>
+					</div>
+				</div>
+			</section>
+			<!--//monthly-->
+			
+			<section id="comb">
+				<div class="comb-area">
+					<h2>전문가들의 똑소리 나는<br>#컬러인테리어</h2>
+					<div class="comb-tab">
+						<div class="cont-area">
+							<div class="comb-cont comb1">
+								<a href="#" class="pic pic1">
+									<figure><img src="img/main02_main.jpg" alt=""></figure>
+								</a>
+								<a href="#" class="pic pic2">
+									<figure><img src="img/main02_img07.jpg" alt=""></figure>
+								</a>
+								<a href="#" class="pic pic3">
+									<figure><img src="img/main02_img08.jpg" alt=""></figure>
+								</a>
+								<a href="#" class="pic pic4">
+									<figure><img src="img/main02_img09.jpg" alt=""></figure>
+								</a>
+								<a href="#" class="pic pic5">
+									<figure><img src="img/main02_img10.jpg" alt=""></figure>
+								</a>
+								<a href="#" class="pic pic6">
+									<figure><img src="img/main02_img11.jpg" alt=""></figure>
+								</a>
+							</div>
+							<div class="comb-cont comb2">
+								<a href="#" class="pic pic1">
+									<figure><img src="img/main02_img03.jpg" alt=""></figure>
+								</a>
+								<a href="#" class="pic pic2">
+									<figure><img src="img/main02_img04.jpg" alt=""></figure>
+								</a>
+								<a href="#" class="pic pic3">
+									<figure><img src="img/main02_img05.jpg" alt=""></figure>
+								</a>
+								<a href="#" class="pic pic4">
+									<figure><img src="img/main02_img12.jpg" alt=""></figure>
+								</a>
+								<a href="#" class="pic pic5">
+									<figure><img src="img/main02_img02.jpg" alt=""></figure>
+								</a>
+								<a href="#" class="pic pic6">
+									<figure><img src="img/main02_img06.jpg" alt=""></figure>
+								</a>
+							</div>
+						</div>
+						<p class="num">
+							<span class="eng">1/<span class="c-num">2</span></span>
+							<span class="eng">2/<span class="c-num">2</span></span>
+						</p>
+						<a href="#">컬러 제안 새로보기 <i class="xi-refresh"></i></a>
+					</div>
+				</div>
+			</section>
+			<!--//comb-->
+			
+			<section id="review">
+				<div class="review-area">
+					<a href="#">
+						<p class="re-text">
+							<span class="s-text">홈앤톤즈 리빙작가와 소비자들이 직접 페인팅한</span>
+							<span class="b-text">다양한 <span>셀프 페인팅<br> 후기</span>를 확인해보세요.</span>
+						</p>
+					</a>
+				</div>
+			</section>
+			<!--//review-->
+			
+			<section id="select">
+				<div class="inner">
+					<h2>어떤 페인트를 찾으세요?</h2>
+					<div class="sel-tab">
+						<ul class="tab-list">
+							<li><a href=".cont1">벽지</a></li>
+							<li><a href=".cont2">가구</a></li>
+							<li><a href=".cont3">방문</a></li>
+							<li><a href=".cont4">칠판 기능성</a></li>
+							<li><a href=".cont5">타일</a></li>
+						</ul>
+						<div class="tab-cont cont1">
+							<div class="cont cont1-1">
+								<a href="#">
+									<figure><img src="img/main01_01_img13.jpg" alt=""></figure>
+									<p>거실 벽지페인트 세트</p>
+									<span>퀘이사 블루 <span class="eng"># S 6010-B10G</span></span>
+								</a>
+							</div>
+							<div class="swiper tab-slide">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide cont1-2">
+										<a href="#">
+											<figure><img src="img/main04_img02.jpg" alt=""></figure>
+											<span class="eng"># S 1015-Y30R</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont1-3">
+										<a href="#">
+											<figure><img src="img/main04_img03.jpg" alt=""></figure>
+											<span class="eng"># S 2020-R</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont1-4">
+										<a href="#">
+											<figure><img src="img/main04_img04.jpg" alt=""></figure>
+											<span class="eng"># S 6020-Y40R</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont1-5">
+										<a href="#">
+											<figure><img src="img/main04_img05.jpg" alt=""></figure>
+											<span class="eng"># S 1040-R10B</span>
+										</a>
+									</div>
+									<a href="#"><i class="xi-plus-thin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="tab-cont cont2">
+							<div class="cont cont2-1">
+								<a href="#">
+									<figure><img src="img/main01_01_img10.jpg" alt=""></figure>
+									<p>작은가구 리폼 페인트세트</p>
+									<span class="eng"># S 0550-Y30R / # S 6010-B10G</span>
+								</a>
+							</div>
+							<div class="swiper tab-slide">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide cont2-2">
+										<a href="#">
+											<figure><img src="img/main04_img07.jpg" alt=""></figure>
+											<span class="eng"># S 1030-B</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont2-3">
+										<a href="#">
+											<figure><img src="img/main04_img08.jpg" alt=""></figure>
+											<span class="eng"># S 7020-B50G</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont2-4">
+										<a href="#">
+											<figure><img src="img/main04_img09.jpg" alt=""></figure>
+											<span class="eng"># S 1050-Y90R</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont2-5">
+										<a href="#">
+											<figure><img src="img/main04_img10.jpg" alt=""></figure>
+											<span class="eng"># S 1080-Y90R</span>
+										</a>
+									</div>
+									<a href="#"><i class="xi-plus-thin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="tab-cont cont3">
+							<div class="cont cont3-1">
+								<a href="#">
+									<figure><img src="img/main01_01_img11.jpg" alt=""></figure>
+									<p>방문 페인트세트</p>
+									<span class="eng"># S 0300-N</span>
+								</a>
+							</div>
+							<div class="swiper tab-slide">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide cont3-2">
+										<a href="#">
+											<figure><img src="img/main04_img12.jpg" alt=""></figure>
+											<span class="eng"># S 1050-Y80R</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont3-3">
+										<a href="#">
+											<figure><img src="img/main04_img13.jpg" alt=""></figure>
+											<span class="eng"># S 0550-Y10R</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont3-4">
+										<a href="#">
+											<figure><img src="img/main04_img14.jpg" alt=""></figure>
+											<span class="eng"># S 4020-B</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont3-5">
+										<a href="#">
+											<figure><img src="img/main04_img15.jpg" alt=""></figure>
+											<span class="eng"># S 1070-R10B</span>
+										</a>
+									</div>
+									<a href="#"><i class="xi-plus-thin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="tab-cont cont4">
+							<div class="cont cont4-1">
+								<a href="#">
+									<figure><img src="img/main01_01_img12.jpg" alt=""></figure>
+									<p>칠판 페인트세트</p>
+									<span class="eng"># S 4050-R90B</span>
+								</a>
+							</div>
+							<div class="swiper tab-slide">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide cont4-2">
+										<a href="#">
+											<figure><img src="img/main04_img17.jpg" alt=""></figure>
+											<span class="eng"># S 8010-B90G</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont4-3">
+										<a href="#">
+											<figure><img src="img/main04_img18.jpg" alt=""></figure>
+											<span class="eng"># S 1040-R</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont4-4">
+										<a href="#">
+											<figure><img src="img/main04_img19.jpg" alt=""></figure>
+											<span class="eng"># S 1070-R10B</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont4-5">
+										<a href="#">
+											<figure><img src="img/main04_img20.jpg" alt=""></figure>
+											<span class="eng"># S 5800-N</span>
+										</a>
+									</div>
+									<a href="#"><i class="xi-plus-thin"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="tab-cont cont5">
+							<div class="cont cont5-1">
+								<a href="#">
+									<figure><img src="img/main01_01_img09.jpg" alt=""></figure>
+									<p>컬러 타일 페인트세트</p>
+									<span class="eng"># S 1010-Y80R</span>
+								</a>
+							</div>
+							<div class="swiper tab-slide">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide cont5-2">
+										<a href="#">
+											<figure><img src="img/main04_img22.jpg" alt=""></figure>
+											<span class="eng"># S 1020-B50G</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont5-3">
+										<a href="#">
+											<figure><img src="img/main04_img23.jpg" alt=""></figure>
+											<span class="eng"># S White</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont5-4">
+										<a href="#">
+											<figure><img src="img/main04_img24.jpg" alt=""></figure>
+											<span class="eng"># S 1020-Y</span>
+										</a>
+									</div>
+									<div class="swiper-slide cont5-5">
+										<a href="#">
+											<figure><img src="img/main04_img25.jpg" alt=""></figure>
+											<span class="eng"># S 3010-B90G</span>
+										</a>
+									</div>
+									<a href="#"><i class="xi-plus-thin"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--//select-->
+			
+			<section id="case">
+				<h2>셀프가 부담된다면 #시공서비스</h2>
+				<ul class="case-area">
+					<li>
+						<a href="#">
+							<figure></figure>
+							<p>
+								<span class="b-text">신뢰와 편안함을 모두 챙긴 모던스타일</span>
+								<span class="s-text">서울 강남구 테헤란로 435 소형 컨설팅 사무실</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<figure></figure>
+							<p>
+								<span class="b-text">가족의 취향을 고려한 클래식 심플 스타일</span>
+								<span class="s-text">서울 강남구 삼성동 7-3 삼성레미안아파트</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<figure></figure>
+							<p>
+								<span class="b-text">컬러 배색으로 개성있는 공간 연출</span>
+								<span class="s-text">옥수 한남하이츠 아파트</span>
+							</p>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="more">시공 서비스가 궁금하면 클릭!</a>
+			</section>
+			<!--//case (service)-->
+			
+			<aside id="store">
+				<h2>전국 어디에서나 #홈앤톤즈</h2>
+				<p>가까운 매장을 검색해보세요.</p>
+				<form>
+					<select name="local">
+						<option value="0">지역 선택</option>
+						<option value="1">서울</option>
+						<option value="2">경기</option>
+						<option value="3">강원</option>
+						<option value="4">경남</option>
+						<option value="5">경북</option>
+						<option value="6">전남</option>
+						<option value="7">전북</option>
+					</select>
+				</form>
+			</aside>
+			<!--//store-->
+		</main>
+		
+		<footer>
+			<div class="f-top">
+				<a href="#">홈앤톤즈 소개</a>
+				<a href="#">입점 및 제휴문의</a>
+				<a href="#">고객센터</a>
+			</div>
+			<div class="f-main">
+				<form>
+					<select name="site" class="eng">
+						<option value="site1">FAMILY SITE</option>
+						<option value="site2">삼화페인트</option>
+						<option value="site3">컬러디자인센터</option>
+					</select>
+				</form>
+				<div class="f-sns">
+					<a href="#"><img src="icon/foot_sns01.png" alt="블로그"></a>
+					<a href="#"><img src="icon/foot_sns02.png" alt="인스타그램"></a>
+					<a href="#"><img src="icon/foot_sns04.png" alt="네이버"></a>
+				</div>
+				<div class="f-info">
+					<p class="info1">
+						<a href="#">
+							<span class="b-text">고객센터</span>
+							<span class="num">1661-9113</span>
+						</a>
+					</p>
+					<p class="info2">
+						<span>쇼핑몰 고객센터 운영시간</span>
+						<span>월-금 : 10:00 ~ 17 : 00 (점심시간 12:00 ~ 13:00)</span>
+					</p>
+					<div class="info3">
+						<span>홈앤톤즈 주식회사 대표자 : 허영희</span>
+						<address>주소 : 서울특별시 종로구 돈화문로 58-1, 1층(묘동)</address>
+						<span>사업자 등록번호 : 283-86-00443</span>
+						<span>통신판매신고번호 : 제 2020-서울종로-1060호</span>
+						<span>쇼핑몰 고객센터 : 1661-9113 팩스 : 02-745-6934</span>
+						<span>E-mail : homentones@spi.co.kr 구매안전 서비스 가입</span>
+					</div>
+				</div>
+				<copy>Copyright Samhwa paints. All rights reserved</copy>
+				<p class="bot">
+					<span>
+						<a href="#">개인정보처리방침</a> · <a href="#">이용약관</a> · <a href="#">이메일무단수집거부</a>
+					</span>
+				</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
