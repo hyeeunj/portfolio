@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/*한글폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+/*영문폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Josefin+Slab:wght@400;600;700&family=Kalam:wght@300;400;700&family=Knewave&family=Lemon&family=Lily+Script+One&family=Merienda+One&family=Oleo+Script+Swash+Caps:wght@400;700&family=Quicksand:wght@400;500;600;700&family=Rammetto+One&family=Rokkitt:wght@300;400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
