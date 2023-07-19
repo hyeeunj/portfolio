@@ -1,0 +1,376 @@
+@charset 'utf-8';
+
+html {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  color: #333;
+}
+/* reset.css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ul,
+li {
+  list-style: none;
+  color: inherit;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.hidden {
+  font-size: 0;
+  font-weight: 0;
+  line-height: 0;
+  color: transparent;
+}
+header {
+  padding: 30px 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 12px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  &.active {
+    position: fixed;
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+
+    li {
+      a {
+        display: block;
+        font-size: 2.4rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+section {
+  padding-top: 100px;
+  box-sizing: border-box;
+
+  h2 {
+    margin-bottom: 50px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #000;
+  }
+
+  .sec-tit {
+    font-weight: 700;
+  }
+}
+.home {
+  height: calc(100vh - 84px);
+  background: ivory;
+  h2 {
+    span {
+      font-size: 1.6rem;
+      color: rgba(0, 0, 0, 0.7);
+    }
+    p {
+      margin-top: 20px;
+    }
+  }
+}
+
+// about
+.about {
+  .cont {
+    margin-bottom: 30px;
+    &-tit {
+      margin-bottom: 15px;
+      font-size: 2rem;
+      color: #888;
+    }
+  }
+
+  &-cont {
+    li {
+      font-size: 1.8rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+// skill
+.skill {
+  .cont {
+    &-tit {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    &-list {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      li {
+        width: calc(100% / 4 - 20px);
+        padding: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+
+          &.w-60 {
+            width: 60%;
+          }
+          &.w-40 {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// project
+.project {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: start;
+
+    li {
+      //이미지 넣고 수정하기
+      margin-bottom: 40px;
+      width: calc(100% / 3 - 17px);
+
+      a {
+        margin-bottom: 40px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        height: 250px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__ex {
+      display: flex;
+      justify-content: start;
+      gap: 35px;
+      margin-left: 10px;
+      width: 100%;
+      font-size: 1.8rem;
+
+      p {
+        margin: 15px 0;
+        word-break: keep-all;
+      }
+
+      &--tit {
+        max-width: 90px;
+        width: 100%;
+        p {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+// contact {
+.contact {
+  padding-bottom: 100px;
+  &-cont {
+    text-align: center;
+  }
+  a {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
+
+//tab
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
+  .wrap {
+    width: 85%;
+  }
+  header {
+    padding: 25px 0;
+  }
+  .project {
+    &-list {
+      li {
+        a {
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+//mobile
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+  .about {
+    &-cont {
+      li {
+        word-break: keep-all;
+      }
+    }
+  }
+
+  .skill {
+    .cont {
+      &-list {
+        gap: 15px;
+        li {
+          width: calc(100% / 3 - 15px);
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+  .project {
+    &-list {
+      // flex-direction: column;
+      li {
+        width: calc(50% - 15px);
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
