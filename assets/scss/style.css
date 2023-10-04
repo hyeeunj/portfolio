@@ -195,7 +195,7 @@ section .sec-tit {
 
 .home {
   height: calc(100vh - 84px);
-  background: ivory;
+  background: url(../images/main.png) no-repeat center;
 }
 .home h2 span {
   font-size: 1.6rem;
