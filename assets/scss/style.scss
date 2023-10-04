@@ -188,7 +188,10 @@ section {
 }
 .home {
   height: calc(100vh - 84px);
-  background: url(../images/main.png) no-repeat center;
+  background-image: url(../images/main.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.1);
   h2 {
     span {
       font-size: 1.6rem;
@@ -368,10 +371,13 @@ section {
 
   .project {
     &-list {
-      // flex-direction: column;
+      flex-direction: column;
       li {
         width: 100%;
         margin-bottom: 20px;
+        a {
+          margin-bottom: 20px;
+        }
       }
     }
   }

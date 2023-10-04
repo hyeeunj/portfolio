@@ -195,7 +195,10 @@ section .sec-tit {
 
 .home {
   height: calc(100vh - 84px);
-  background: url(../images/main.png) no-repeat center;
+  background-image: url(../images/main.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .home h2 span {
   font-size: 1.6rem;
@@ -328,8 +331,14 @@ section .sec-tit {
     width: calc(33.3333333333% - 15px);
     padding: 20px;
   }
+  .project-list {
+    flex-direction: column;
+  }
   .project-list li {
     width: 100%;
+    margin-bottom: 20px;
+  }
+  .project-list li a {
     margin-bottom: 20px;
   }
 }
