@@ -287,7 +287,7 @@ section {
       gap: 35px;
       margin-left: 10px;
       width: 100%;
-      font-size: 1.8rem;
+      font-size: 2rem;
 
       p {
         margin: 15px 0;
@@ -325,6 +325,7 @@ section {
   }
   .wrap {
     width: 85%;
+    margin-bottom: 20px;
   }
   header {
     padding: 25px 0;
@@ -369,7 +370,7 @@ section {
     &-list {
       // flex-direction: column;
       li {
-        width: calc(50% - 15px);
+        width: 100%;
         margin-bottom: 20px;
       }
     }
