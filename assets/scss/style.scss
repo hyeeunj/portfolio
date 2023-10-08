@@ -190,7 +190,7 @@ section {
   position: relative;
   height: calc(100vh - 84px);
   background-image: url(../images/main.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   &::after {
