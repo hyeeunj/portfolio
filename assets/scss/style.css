@@ -332,6 +332,12 @@ section .sec-tit {
   html {
     font-size: 7px;
   }
+  header .wrap {
+    margin-bottom: 0;
+  }
+  main {
+    overflow: hidden;
+  }
   .about-cont li {
     word-break: keep-all;
   }
