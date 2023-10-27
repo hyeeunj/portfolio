@@ -1,0 +1,252 @@
+// 여기부터
+header {
+  padding: 20px 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 12px 1px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 2;
+  .wrap {
+    width: 80%;
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+
+    li {
+      a {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.container {
+  padding-top: 120px;
+}
+.wrap {
+  margin: 0 auto;
+}
+section {
+  padding-top: 100px;
+  box-sizing: border-box;
+
+  h2 {
+    margin-bottom: 50px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #000;
+  }
+
+  .sec-tit {
+    font-weight: 700;
+  }
+}
+.home {
+  position: relative;
+  height: calc(100vh - 84px);
+  background-image: url(../images/main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h2 {
+    span {
+      font-size: 1.6rem;
+      color: #fff;
+    }
+    p {
+      margin-top: 20px;
+      color: #fff;
+    }
+  }
+}
+
+// about
+.about {
+  .cont {
+    margin-bottom: 30px;
+    &-tit {
+      margin-bottom: 15px;
+      font-size: 2rem;
+      color: #888;
+    }
+  }
+
+  &-cont {
+    li {
+      font-size: 1.8rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+// skill
+.skill {
+  .cont {
+    &-tit {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    &-list {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      li {
+        width: calc(100% / 4 - 20px);
+        padding: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+
+          &.w-60 {
+            width: 60%;
+          }
+          &.w-40 {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// project
+.project {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: start;
+
+    li {
+      //이미지 넣고 수정하기
+      margin-bottom: 40px;
+      width: calc(100% / 3 - 17px);
+
+      a {
+        margin-bottom: 40px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        height: 250px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__ex {
+      display: flex;
+      justify-content: start;
+      gap: 35px;
+      margin-left: 10px;
+      width: 100%;
+      font-size: 2rem;
+
+      p {
+        margin: 15px 0;
+        word-break: keep-all;
+      }
+
+      &--tit {
+        max-width: 90px;
+        width: 100%;
+        p {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+// contact {
+.contact {
+  padding-bottom: 100px;
+  &-cont {
+    padding-top: 30px;
+    text-align: center;
+  }
+  a {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+}
+
+//tab
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 8px;
+  }
+  .wrap {
+    width: 85%;
+  }
+  header {
+    padding: 25px 0;
+  }
+  .project {
+    &-list {
+      li {
+        a {
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+//mobile
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+  header {
+    .wrap {
+      margin-bottom: 0;
+    }
+  }
+  .container {
+    overflow: hidden;
+  }
+  .about {
+    &-cont {
+      li {
+        word-break: keep-all;
+      }
+    }
+  }
+
+  .skill {
+    .cont {
+      &-list {
+        gap: 15px;
+        li {
+          width: calc(100% / 3 - 15px);
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+  .project {
+    &-list {
+      flex-direction: column;
+      li {
+        width: 100%;
+        margin-bottom: 20px;
+        a {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+// 여기까지 기존 스타일
