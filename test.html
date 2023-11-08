@@ -4,177 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="./assets/js/fullpage.min.css" />
 
     <title>Document</title>
-    <style>
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
-
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
   </head>
   <body>
-    <div class="swiper mySwiper">
-      <div class="test"></div>
-      <div class="swiper-wrapper">
-        <!-- home -->
-        <div class="swiper-slide slide home">
-          <div class="wrap home-wrap">
-            <h2 class="home-title">Heny's log</h2>
-          </div>
-        </div>
-        <!-- about -->
-        <div id="about" class="swiper-slide slide about">
-          <div class="wrap slide-wrap">
-            <div class="slide-content">
-              <div class="about-content">
-                <div class="about-content__intro">
-                  <img src="./assets/images/main.png" alt="about 이미지" />
-                  <p>
-                    안녕하세요! 끊임없이 성장하는 웹 퍼블리셔 장혜은입니다.
-                    급변하는 트렌드 속에 살아가는 우리. 트렌드을 따라가는 것도
-                    중요하지만 그속에서 자신만의 중심을 지키는 것도 중요하다고
-                    생각합니다. <br />새로운 것을 편견 없이 배우고 받아들여
-                    다양한 관점으로 세상을 바라보는 능동적인 삶을 추구하지만
-                    지금까지 단단하게 쌓아온 내면을 통해 중심을 잃지
-                    않는다~~~(중심을 잃지 않고도 다른 것들을 편견 없이 잘
-                    받아들이기 떄문에 남들보다 성장이 빠르다 이런 늒미쓰?)
-                  </p>
-                </div>
-                <div class="list about-content__list">
-                  <p class="list-title">Education</p>
-                  <p class="list-text">
-                    구로 하이미디어 과정평가형 UX/UI 디자이너 웹 퍼블리셔
-                    훈련과정 수료
-                  </p>
-                  <p>추계예술대학교 실용음악과 졸업</p>
-                  <p>청주여자고등학교 졸업</p>
-                  <p class="list-title">Certification</p>
-                  <p class="list-text">웹디자인기능사 한국산업인력공단</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide slide skill">
-          <div class="wrap slide-wrap">
-            <div class="slide-content">
-              <div class="list skill-list">
-                <p class="list-title">Mark up</p>
-                <p class="list-text">
-                  콘텐츠와 컨셉에 맞는 태그를 사용하여 구현합니다. Html, css는
-                  물론, scss를 통해 견고한 디자인을 하고자 합니다. 또한 상황에
-                  따라 Bootstrap, aos와 같은 라이브러리를 적절하게 활용할 수
-                  있습니다. 웹 표준 및 웹 접근성을 준수하며 ui/ux 사용성을
-                  고려하여 반응형 레이아웃을 구현합니다.
-                </p>
-              </div>
-              <div class="list skill-list">
-                <p class="list-title">Javascript / jQuery</p>
-                <p class="list-text">
-                  Javascript 문법을 이해하고 활용하여 다양한 기능을 구현할 수
-                  있습니다. 현재에 안주하지 않고 더욱 좋은 기능을 섬세하게
-                  구현할 수 있도록 계속해서 탐구하고 있습니다.
-                </p>
-              </div>
-              <div class="list skill-list">
-                <p class="list-title">Co-work</p>
-                <p class="list-text">
-                  동료들과 협업해 결과물을 만들어내는 것에 보람을 느낍니다. Git
-                  등 형상 관리를 중점으로 협업할 수 있으며 다양한 분야에 대해
-                  탐구하고 적용하며 원활한 협업을 위해 노력합니다. 기본적인
-                  원칙을 지키며 그 안에서 수용적인 자세로 동료들과 함께 옳다고
-                  생각하는 것을 이루어나갑니다.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide slide project">
-          <div class="wrap slide-wrap">
-            <div class="project-list">
-              <div class="project-list__view">
-                <a href=""
-                  ><img
-                    src="./assets/images/project_01.png"
-                    alt="삼성반도체 웹사이트 이미지"
-                /></a>
-                <div class="project-list__view--desc">
-                  <p class="project-list__view--title">삼성반도체</p>
-                  <span class="project-list__view--tools">HTML</span>
-                  <span class="project-list__view--tools">HTML</span>
-                  <span class="project-list__view--tools">HTML</span>
-                </div>
-              </div>
-              <div class="project-list__text">
-                <p class="project-list__text--desc">
-                  저의 첫 프로젝트입니다. 입사 후 처음 맡은 업무로서 무엇보다도
-                  협업에 대해 배울 수 있었습니다. 협업 툴을 사용하여 업무내용을
-                  공유하고 이슈가 생겼을 시 명확하고 간결하게 전달해야 하는 것,
-                  그리고 다른 부서와의 의사소통에서 쓰이는 용어들에 대한
-                  중요성을 느꼈습니다. 제가 주로 맡은 업무는 서브페이지 리뉴얼과
-                  고객사의 이벤트, 뉴스 등을 메인 페이지에 업데이트하는
-                  것이었습니다. 처음에는 기획자와 디자이너의 요구를 현재 업무
-                  상태를 파악하지 않은 채 받기만 해 오픈 순서가 꼬이는 등의
-                  문제가 생겼습니다. 그래서 로컬에서 모든 작업을 마친 후 순서를
-                  체크하여 순차적으로 업데이트 하는 등 업무방식을 수정했습니다.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide slide">Slide 5</div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
+    <main id="fullpage">
+      <section class="section">section1</section>
+      <section class="section">section2</section>
+      <section class="section">section3</section>
+      <section class="section">section4</section>
+    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/fullpage.min.js"></script>
 
-    <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
-        mousewheel: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
+      new fullpage("#fullpage", {});
     </script>
   </body>
 </html>
