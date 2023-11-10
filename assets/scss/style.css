@@ -335,6 +335,7 @@ header .list-wrap {
 
 .skill .wrap {
   max-width: 1024px;
+  width: 90%;
   margin: 30px auto 0;
 }
 .skill-content {
@@ -445,6 +446,7 @@ header .list-wrap {
 }
 
 .contact {
+  position: relative;
   text-align: center;
 }
 .contact-intro {
@@ -460,19 +462,22 @@ header .list-wrap {
 .contact-outro {
   font-size: 2.4rem;
 }
-
-.footer {
+.contact .footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px 0;
   text-align: center;
 }
-.footer p {
+.contact .footer p {
   font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.5);
 }
-.footer p:first-child {
+.contact .footer p:first-child {
   margin-bottom: 5px;
 }
-.footer .fp-watermark {
+.contact .footer .fp-watermark {
   display: none !important;
 }
 
@@ -597,7 +602,7 @@ header .list-wrap {
   }
   .about-content__intro {
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
   }
   .about-content__intro img {
     max-width: 230px;
