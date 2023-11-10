@@ -462,7 +462,8 @@ header .list-wrap {
 .contact-outro {
   font-size: 2.4rem;
 }
-.contact .footer {
+
+.footer {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -470,14 +471,14 @@ header .list-wrap {
   padding: 10px 0;
   text-align: center;
 }
-.contact .footer p {
+.footer p {
   font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.5);
 }
-.contact .footer p:first-child {
+.footer p:first-child {
   margin-bottom: 5px;
 }
-.contact .footer .fp-watermark {
+.footer .fp-watermark {
   display: none !important;
 }
 

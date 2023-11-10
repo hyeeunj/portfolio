@@ -495,25 +495,25 @@ header {
   &-outro {
     font-size: 2.4rem;
   }
-  // footer
-  .footer {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 0;
-    text-align: center;
+}
+// footer
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 0;
+  text-align: center;
 
-    p {
-      font-size: 1.2rem;
-      color: rgba(0, 0, 0, 0.5);
-      &:first-child {
-        margin-bottom: 5px;
-      }
+  p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+    &:first-child {
+      margin-bottom: 5px;
     }
-    .fp-watermark {
-      display: none !important;
-    }
+  }
+  .fp-watermark {
+    display: none !important;
   }
 }
 
