@@ -1,6 +1,3 @@
-AOS.init({
-  once: true,
-});
 
 //fullpage
 new fullpage("#fullpage", {
@@ -45,3 +42,8 @@ $headerBtn.forEach((item, index) => {
     }
   });
 });
+
+AOS.init({
+  once: true,
+});
+console.log('ehla')
