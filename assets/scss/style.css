@@ -180,6 +180,21 @@ button {
   display: none;
 }
 
+.fp-slidesNav {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  text-align: center;
+}
+.fp-slidesNav.fp-bottom {
+  bottom: 20%;
+}
+.fp-slidesNav li a span:nth-child(2) {
+  background: rgba(94, 130, 180, 0.5);
+}
+.fp-slidesNav li a.active span:nth-child(2) {
+  background: rgb(94, 130, 180);
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -461,6 +476,7 @@ header .list-wrap {
 }
 .contact-outro {
   font-size: 2.4rem;
+  word-break: break-all;
 }
 
 .footer {
@@ -491,12 +507,12 @@ header .list-wrap {
     font-size: 2.8rem;
   }
   .home-title {
-    width: 554px;
+    max-width: 554px;
     font-size: 14rem;
   }
   @keyframes textIn {
     100% {
-      width: 554px;
+      max-width: 554px;
     }
   }
   .about .intro-title {

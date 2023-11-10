@@ -5,12 +5,12 @@ AOS.init({
 //fullpage
 new fullpage("#fullpage", {
   navigation: true,
-  // showActiveTooltip: true,
+  showActiveTooltip: true,
   // slidesNavigation: true,
 
-  navigationTooltips: ["home", "about", "skill", "project", "contact"],
   anchors: ["home", "about", "skill", "project", "contact"],
   menu: "#navList",
+  slidesNavigation: true,
   responsiveWidth: 767,
   scrollOverflow: false,
 

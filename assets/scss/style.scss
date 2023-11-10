@@ -168,11 +168,27 @@ button {
 .fp-watermark {
   display: none;
 }
-// #fp-nav.fp-right ul li:nth-child(5),
-// #fp-nav.fp-right ul li:nth-child(6),
-// #fp-nav.fp-right ul li:nth-child(7) {
-//   display: none;
-// }
+.fp-slidesNav {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  text-align: center;
+  &.fp-bottom {
+    bottom: 20%;
+  }
+  li {
+    a {
+      span:nth-child(2) {
+        background: rgb(94, 130, 180, 0.5);
+      }
+      &.active {
+        span:nth-child(2) {
+          background: rgb(94, 130, 180);
+        }
+      }
+    }
+  }
+}
+
 //header
 header {
   position: fixed;
@@ -494,6 +510,7 @@ header {
   }
   &-outro {
     font-size: 2.4rem;
+    word-break: break-all;
   }
 }
 // footer
@@ -529,12 +546,12 @@ header {
   //home
   .home {
     &-title {
-      width: 554px;
+      max-width: 554px;
       font-size: 14rem;
     }
     @keyframes textIn {
       100% {
-        width: 554px;
+        max-width: 554px;
       }
     }
   }
