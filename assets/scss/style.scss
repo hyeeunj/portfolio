@@ -551,6 +551,9 @@ header {
       animation: textInTablet 2s alternate;
     }
     @keyframes textInTablet {
+      0% {
+        max-width: 0;
+      }
       100% {
         max-width: 554px;
       }
@@ -681,6 +684,9 @@ header {
       animation: textInMobile 2s alternate;
     }
     @keyframes textInMobile {
+      0% {
+        max-width: 0;
+      }
       100% {
         max-width: 278px;
       }
