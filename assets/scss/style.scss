@@ -289,16 +289,17 @@ header {
     align-items: center;
   }
   &-title {
-    width: 632px;
+    max-width: 632px;
+    width: 100%;
     font-size: 16rem;
-
     animation: textIn 2s alternate;
     white-space: nowrap;
     overflow-x: hidden;
+    color: red;
   }
 }
 @keyframes textIn {
-  from {
+  0% {
     width: 0;
     opacity: 0;
   }
