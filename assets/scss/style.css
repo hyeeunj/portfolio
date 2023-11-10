@@ -509,8 +509,9 @@ header .list-wrap {
   .home-title {
     max-width: 554px;
     font-size: 14rem;
+    animation: textInTablet 2s alternate;
   }
-  @keyframes textIn {
+  @keyframes textInTablet {
     100% {
       max-width: 554px;
     }
@@ -605,12 +606,13 @@ header .list-wrap {
     width: 350%;
   }
   .home-title {
-    width: 278px;
+    max-width: 278px;
     font-size: 7rem;
+    animation: textInMobile 2s alternate;
   }
-  @keyframes textIn {
+  @keyframes textInMobile {
     100% {
-      width: 278px;
+      max-width: 278px;
     }
   }
   .about .wrap {
