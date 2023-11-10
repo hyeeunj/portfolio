@@ -752,57 +752,5 @@
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/fullpage.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- aos -->
-    <script>
-      AOS.init({
-        once: true,
-      });
-    </script>
-    <script>
-      //fullpage
-      new fullpage("#fullpage", {
-        navigation: true,
-        // showActiveTooltip: true,
-        // slidesNavigation: true,
-
-        navigationTooltips: ["home", "about", "skill", "project", "contact"],
-        anchors: ["home", "about", "skill", "project", "contact"],
-        menu: "#navList",
-        responsiveWidth: 767,
-        scrollOverflow: false,
-
-        afterLoad: function () {
-          document
-            .querySelectorAll(".fp-table.active .aos-init")
-            .forEach(el => {
-              el.classList.add("aos-animate");
-            });
-        },
-        onLeave: function () {
-          document
-            .querySelectorAll(".fp-table.active .aos-init")
-            .forEach(el => {
-              el.classList.remove("aos-animate");
-            });
-        },
-      });
-
-      // header btn 클릭시 포인트
-      const $headerBtn = document.querySelectorAll(".header-btn");
-
-      $headerBtn.forEach((item, index) => {
-        item.addEventListener("click", () => {
-          for (let i = 0; i < $headerBtn.length; i++) {
-            $headerBtn[i].classList.remove("on");
-          }
-          if (item.classList.contains("on")) {
-            item.classList.remove("on");
-          } else {
-            item.classList.add("on");
-          }
-        });
-      });
-    </script>
   </body>
 </html>
