@@ -295,7 +295,6 @@ header {
     animation: textIn 2s alternate;
     white-space: nowrap;
     overflow-x: hidden;
-    color: red;
   }
 }
 @keyframes textIn {
@@ -651,7 +650,6 @@ header {
 @media (max-width: 767px) {
   .section {
     height: auto !important;
-    padding: 30px 0;
     box-sizing: border-box;
   }
   .eng-tit {
@@ -680,8 +678,9 @@ header {
   //home
   .home {
     &-title {
-      max-width: 278px;
+      max-width: 100%;
       font-size: 7rem;
+      text-align: center;
       animation: textInMobile 2s alternate;
     }
     @keyframes textInMobile {
@@ -689,7 +688,7 @@ header {
         max-width: 0;
       }
       100% {
-        max-width: 278px;
+        max-width: 100%;
       }
     }
   }
@@ -822,5 +821,6 @@ header {
   //footer
   .footer {
     padding: 10px 0;
+    font-size: 1rem;
   }
 }
