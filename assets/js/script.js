@@ -1,31 +1,31 @@
 
 //fullpage
-new fullpage("#fullpage", {
-  navigation: true,
-  showActiveTooltip: true,
-  // slidesNavigation: true,
+// new fullpage("#fullpage", {
+//   navigation: true,
+//   showActiveTooltip: true,
+//   // slidesNavigation: true,
 
-  anchors: ["home", "about", "skill", "project", "contact"],
-  menu: "#navList",
-  slidesNavigation: true,
-  responsiveWidth: 767,
-  scrollOverflow: false,
+//   anchors: ["home", "about", "skill", "project", "contact"],
+//   menu: "#navList",
+//   slidesNavigation: true,
+//   responsiveWidth: 767,
+//   scrollOverflow: false,
 
-  afterLoad: function () {
-    document
-      .querySelectorAll(".fp-table.active .aos-init")
-      .forEach(el => {
-        el.classList.add("aos-animate");
-      });
-  },
-  onLeave: function () {
-    document
-      .querySelectorAll(".fp-table.active .aos-init")
-      .forEach(el => {
-        el.classList.remove("aos-animate");
-      });
-  },
-});
+//   afterLoad: function () {
+//     document
+//       .querySelectorAll(".fp-table.active .aos-init")
+//       .forEach(el => {
+//         el.classList.add("aos-animate");
+//       });
+//   },
+//   onLeave: function () {
+//     document
+//       .querySelectorAll(".fp-table.active .aos-init")
+//       .forEach(el => {
+//         el.classList.remove("aos-animate");
+//       });
+//   },
+// });
 
 // header btn 클릭시 포인트
 const $headerBtn = document.querySelectorAll(".header-btn");
