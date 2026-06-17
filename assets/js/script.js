@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // 타임라인 정의
   const tl = gsap.timeline({
     scrollTrigger: {
-      trigger: ".project",
-      start: "-100",
+      trigger: ".project-cont",
+      start: "top 80px",
       end: "+=5000", // 전체 길이를 늘려야 충분한 공간 제공
       pin: true,
       scrub: true,

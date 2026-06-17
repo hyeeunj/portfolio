@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @font-face {
@@ -268,8 +269,6 @@ header .header .project-depth1.sub-active {
   color: #333;
 }
 header .title {
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
@@ -372,8 +371,7 @@ header .list-wrap {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 300%;
-  -webkit-animation: moveBg 60s linear infinite;
-          animation: moveBg 60s linear infinite;
+  animation: moveBg 60s linear infinite;
   z-index: -1;
 }
 .bg-inner {
@@ -394,29 +392,12 @@ header .list-wrap {
   z-index: 1;
 }
 
-@-webkit-keyframes bgGradient {
-  0% {
-    background: linear-gradient(to bottom, transparent, #fff);
-  }
-  100% {
-    background: linear-gradient(to bottom, transparent 30%, #fff 70%);
-  }
-}
-
 @keyframes bgGradient {
   0% {
     background: linear-gradient(to bottom, transparent, #fff);
   }
   100% {
     background: linear-gradient(to bottom, transparent 30%, #fff 70%);
-  }
-}
-@-webkit-keyframes moveBg {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 100%;
   }
 }
 @keyframes moveBg {
@@ -443,8 +424,7 @@ header .list-wrap {
   line-height: 1.5;
 }
 .home-title svg {
-  -webkit-animation: stroke 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-          animation: stroke 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation: stroke 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   fill: transparent;
   font-family: "Roboto", sans-serif;
 }
@@ -453,31 +433,6 @@ header .list-wrap {
   font-size: 12rem;
   font-weight: 700;
   letter-spacing: -1px;
-}
-@-webkit-keyframes stroke {
-  0% {
-    stroke-dashoffset: 10%;
-    stroke-dasharray: 0 50%;
-    fill: transparent;
-    stroke: #4176bf;
-    stroke-width: 5px;
-  }
-  70% {
-    fill: transparent;
-    stroke: white;
-  }
-  80% {
-    fill: transparent;
-    stroke: white;
-  }
-  100% {
-    stroke-dashoffset: -25%;
-    stroke-dasharray: 50% 0;
-    fill: rgba(17, 17, 17, 0.8);
-    stroke: white;
-    stroke-width: 3px;
-    text-shadow: 5px 5px rgba(255, 255, 255, 0.2);
-  }
 }
 @keyframes stroke {
   0% {
@@ -524,8 +479,7 @@ header .list-wrap {
 .about-bx img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .about .txt-wrap {
   width: 60%;
@@ -543,11 +497,13 @@ header .list-wrap {
 }
 
 .project {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
+  padding: 120px 0;
 }
 .project .container,
 .project .project-wrap {
-  height: 100%;
+  height: auto;
 }
 .project .tit-wrap {
   margin-bottom: 50px;
@@ -557,6 +513,7 @@ header .list-wrap {
 }
 .project-cont {
   position: relative;
+  height: 50vh;
 }
 .project-cont__item {
   position: absolute;
@@ -610,8 +567,6 @@ header .list-wrap {
 }
 .project-cont .btn-wrap {
   margin-top: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -826,7 +781,7 @@ header .list-wrap {
     left: 7%;
   }
   .project .fp-next:before,
-.project .fp-prev:before {
+  .project .fp-prev:before {
     font-size: 3rem;
   }
   .project-list {
@@ -885,16 +840,7 @@ header .list-wrap {
     max-width: 100%;
     font-size: 3rem;
     text-align: center;
-    -webkit-animation: textInMobile 2s alternate;
-            animation: textInMobile 2s alternate;
-  }
-  @-webkit-keyframes textInMobile {
-    0% {
-      max-width: 0;
-    }
-    100% {
-      max-width: 100%;
-    }
+    animation: textInMobile 2s alternate;
   }
   @keyframes textInMobile {
     0% {
@@ -1032,8 +978,6 @@ header .list-wrap {
   margin-bottom: 30px;
 }
 .prj .btn-wrap {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   color: white;
 }
@@ -1058,4 +1002,257 @@ header .list-wrap {
   .prj .tag-bx {
     margin-bottom: 25px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+.project-detail {
+  background: #111;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 60px 40px;
+  margin-bottom: 80px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-align: left;
+  /* Left Sidebar */
+  /* Right Content */
+}
+.project-detail .detail-container {
+  display: flex;
+  gap: 60px;
+}
+.project-detail .detail-sidebar {
+  width: 280px;
+  flex-shrink: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding-right: 40px;
+}
+.project-detail .detail-sidebar .sidebar-header {
+  margin-bottom: 35px;
+}
+.project-detail .detail-sidebar .sidebar-header .detail-badge {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #7aa3dd;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.project-detail .detail-sidebar .sidebar-header .detail-title {
+  font-family: "Roboto";
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.project-detail .detail-sidebar .sidebar-header .detail-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5);
+}
+.project-detail .detail-sidebar .sidebar-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.project-detail .detail-sidebar .sidebar-info .info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.project-detail .detail-sidebar .sidebar-info .info-group .info-label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #7aa3dd;
+  letter-spacing: 0.5px;
+}
+.project-detail .detail-sidebar .sidebar-info .info-group .info-val {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  word-break: keep-all;
+}
+.project-detail .detail-sidebar .sidebar-info .info-group .info-val.highlight-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+.project-detail .detail-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  /* Bullet List style */
+  /* Process list */
+  /* Review section text style */
+}
+.project-detail .detail-content .content-section {
+  position: relative;
+}
+.project-detail .detail-content .content-section .content-section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #7aa3dd;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 8px;
+}
+.project-detail .detail-content .content-section.summary .summary-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  word-break: keep-all;
+}
+.project-detail .detail-content .bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.project-detail .detail-content .bullet-list li {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 15px;
+  word-break: keep-all;
+}
+.project-detail .detail-content .bullet-list li::before {
+  content: "•";
+  color: #7aa3dd;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+.project-detail .detail-content .bullet-list li:last-child {
+  margin-bottom: 0;
+}
+.project-detail .detail-content .process-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.project-detail .detail-content .process-list > li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-detail .detail-content .process-list .process-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.project-detail .detail-content .process-list .process-header .process-num {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #7aa3dd;
+  opacity: 0.8;
+}
+.project-detail .detail-content .process-list .process-header h5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+.project-detail .detail-content .process-list .bullet-list {
+  padding-left: 25px;
+}
+.project-detail .detail-content .review-text {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  word-break: keep-all;
+}
+
+/* Publishing section title styling */
+.publishing-section-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.publishing-section-title .pub-title {
+  font-family: "Roboto";
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.publishing-section-title .pub-subtitle {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 1024px) {
+  .project-detail {
+    padding: 40px 30px;
+    margin-bottom: 60px;
+  }
+  .project-detail .detail-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .project-detail .detail-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-right: 0;
+    padding-bottom: 35px;
+  }
+  .project-detail .detail-sidebar .sidebar-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .project-detail .detail-sidebar .sidebar-info .info-group {
+    flex: 1 1 40%;
+  }
+}
+@media (max-width: 768px) {
+  .project-detail {
+    padding: 30px 20px;
+    margin-bottom: 40px;
+  }
+  .project-detail .detail-sidebar .sidebar-header {
+    margin-bottom: 25px;
+  }
+  .project-detail .detail-sidebar .sidebar-header .detail-title {
+    font-size: 2.6rem;
+  }
+  .project-detail .detail-sidebar .sidebar-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .project-detail .detail-sidebar .sidebar-info .info-group {
+    flex: none;
+  }
+  .project-detail .detail-content {
+    gap: 30px;
+  }
+  .project-detail .detail-content .content-section.summary .summary-text {
+    font-size: 1.6rem;
+  }
+  .project-detail .detail-content .process-list .bullet-list {
+    padding-left: 15px;
+  }
+  .project-detail .publishing-section-title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  .project-detail .publishing-section-title .pub-title {
+    font-size: 2.2rem;
+  }
+  .project-detail .publishing-section-title .pub-subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
