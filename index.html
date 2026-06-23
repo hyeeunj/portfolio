@@ -143,7 +143,7 @@
                       <span>#JWT</span>
                       <span>#PostgreSQL</span>
                       <span>#Docker</span>
-                      <span>#</span>
+                      <span>#Hexagonal Architecture</span>
                       <span>#GitHub Actions</span>
                       <span>#토스페이먼츠</span>
                       <span>#Google OAuth2</span>
@@ -199,7 +199,7 @@
                       </div>
                       <ul class="bullet-list">
                         <li>탐색, 티켓 예매, 알림으로 이어지는 전체 유저 저니(User Journey) 백엔드 로직 구현</li>
-                        <li>도메인 간 데이터 흐름의 독립성을 보장하는 유연한 아키텍처 구조 설계</li>
+                        <li>외부 인프라(DB, 결제 등) 의존성을 포트와 어댑터로 분리하는 헥사고날 아키텍처를 적용하여 도메인 간 독립성 보장</li>
                       </ul>
                     </li>
                     <li>
@@ -279,6 +279,7 @@
                       <span>#Redis</span>
                       <span>#AWS</span>
                       <span>#Docker</span>
+                      <span>#Hexagonal Architecture</span>
                       <span>#GitHub Actions</span>
                     </div>
                   </div>
@@ -307,7 +308,7 @@
                 <div class="content-section summary">
                   <h4 class="content-section-title">핵심 내용</h4>
                   <p class="summary-text">
-                    AI Agent의 정교한 비즈니스 로직 설계와 역할 기반 접근 제어(RBAC) 권한 인증을 통해, 보안성과 효율성을 갖춘 호텔 백오피스 자동화 시스템 구축
+                    비즈니스 도메인과 외부 인프라를 분리하는 헥사고날 아키텍처 구조 하에, AI Agent의 정교한 비즈니스 로직 설계와 역할 기반 접근 제어(RBAC) 권한 인증을 통해 보안성과 효율성을 갖춘 호텔 백오피스 자동화 시스템 구축
                   </p>
                 </div>
 
@@ -335,6 +336,16 @@
                         <li>인증된 사용자만 백오피스 시스템에 안전하게 접근할 수 있도록 인가 플로우 구현</li>
                       </ul>
                     </li>
+                    <li>
+                      <div class="process-header">
+                        <span class="process-num">03</span>
+                        <h5>유연한 확장성을 위한 헥사고날 아키텍처 적용</h5>
+                      </div>
+                      <ul class="bullet-list">
+                        <li>포트와 어댑터 패턴을 활용하여 핵심 도메인 로직과 외부 AI API(Gemini), 데이터베이스(Neo4j, PostgreSQL) 간의 결합도를 낮춰 외부 환경 변화에 유연하게 대응하도록 설계</li>
+                        <li>외부 기술 스택이나 라이브러리 변경이 발생하더라도 도메인 비즈니스 로직이 오염되지 않도록 보호하는 아키텍처 구조 확보</li>
+                      </ul>
+                    </li>
                   </ul>
                 </div>
 
@@ -352,8 +363,7 @@
                 <div class="content-section review">
                   <h4 class="content-section-title">느낀 점</h4>
                   <p class="review-text">
-                    AI 에이전트 기술 실무 적용 시, 정교한 AI 로직만큼이나 이를 뒷받침하는 '안전한 권한 인증 설계'가 시스템 완성도를 결정한다는 것을 깊이 깨달았습니다. 유저 플로우별 권한
-                    제어를 직접 구현하며 보안성과 효율성을 갖춘 백오피스 아키텍처 설계 안목을 길렀습니다.
+                    AI 에이전트 기술 실무 적용 시, 정교한 AI 로직만큼이나 이를 뒷받침하는 '안전한 권한 인증 설계'와 '헥사고날 아키텍처를 통한 외부 인프라와의 격리'가 시스템 완성도에 지대한 영향을 미친다는 것을 깊이 깨달았습니다. 유저 플로우별 권한 제어를 직접 구현하며 보안성과 효율성을 갖춘 백오피스 아키텍처 설계 안목을 길렀습니다.
                   </p>
                 </div>
 
